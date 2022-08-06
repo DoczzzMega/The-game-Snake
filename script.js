@@ -1,8 +1,11 @@
 "use strict";
 // this function is strict...
+const container = document.createElement("div");
+document.body.prepend(container);
+container.classList.add("container");
 
 const field = document.createElement("div");
-document.body.prepend(field);
+container.prepend(field);
 field.classList.add("field");
 
 
