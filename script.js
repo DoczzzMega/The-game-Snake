@@ -1,6 +1,11 @@
 "use strict";
 // this function is strict...
-const container = document.createElement("div");
+let musicEnd = new Audio('fly_project.mp3');
+
+
+musicEnd.addEventListener("canplaythrough", event => {
+  
+  const container = document.createElement("div");
 document.body.prepend(container);
 container.classList.add("container");
 
@@ -163,7 +168,7 @@ if (snakeBody[0].getAttribute('posX') == mouse.getAttribute('posX') && snakeBody
    }, 1100);
    clearInterval(interval);
    snakeBody[0].style.backgroundColor ='rgb(71, 71, 71)';
-   let musicEnd = new Audio('fly_project.mp3');
+   //let musicEnd = new Audio('fly_project.mp3');
    musicEnd.play();
  }
  //-------/end game
@@ -216,4 +221,8 @@ window.addEventListener("keydown", function (event) {  // смена напра�
 
 
 createMouse();
+
+});
+
+
 
