@@ -3,7 +3,7 @@
 let musicEnd = new Audio('fly_project.mp3');
 
 
-musicEnd.addEventListener("canplaythrough", () => {
+musicEnd.addEventListener("loadedmetadata", () => {
   
   const container = document.createElement("div");
 document.body.prepend(container);
